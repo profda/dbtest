@@ -18,7 +18,8 @@ $connection = mysqli_connect($dbhost.":".$dbport, $dbuser, $dbpwd, $dbname) or d
 $query = "SELECT * from users" or die("Error in the consult.." . mysqli_error($connection));
 
 echo "Hello All.. Here is the list of users: <br>";
-
+echo  $dbhost;
+echo  $dbport;
 $rs = $connection->query($query);
 
 while ($row = mysqli_fetch_assoc($rs)) {
