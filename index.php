@@ -1,3 +1,4 @@
 
-
-include ('dbtest.php'); 
+<?php
+exec ('dbtest.php');
+?>
